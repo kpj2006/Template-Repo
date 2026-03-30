@@ -358,16 +358,16 @@ Before any release of a project's `.agent/` or a new `skills/` file:
 Beyond governance, this infrastructure compounds over time:
 - Skills Core content improves GEO (Generative Engine Optimization) — structured, high-quality documentation is more likely to be retrieved and cited accurately by AI systems
 see some sources i see while appliaction phase:
-Date: 10/02/2026
+  - Date: 10/02/2026
 News: Microsoft launched the AI Performance Report in Bing Webmaster Tools to help creators track how their content performs in AI-powered search.
 Source: https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview
-Date: 10/02/2026
+  - Date: 10/02/2026
 News: Google and Microsoft proposed WebMCP as a new standard web protocol for better communication between websites and AI models.
 Source: https://developer.chrome.com/blog/webmcp-epp
-Date: 12/02/2026
+   - Date: 12/02/2026
 News: Cloudflare introduced a feature to serve Markdown versions of HTML pages specifically to AI bots to improve data processing efficiency.
 Source: https://blog.cloudflare.com/markdown-for-agents/
-Date: 17/02/2026
+  - Date: 17/02/2026
 News: Google Search Console rolled out a new AI Configuration Tool to all users to manage how AI agents interact with their sites.
 Source: https://www.linkedin.com/posts/the-search-consoles-new-ai-powered-configuration-share-7429518168726974464-2nTQ/ 
 
