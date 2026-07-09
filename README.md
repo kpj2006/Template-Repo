@@ -43,6 +43,8 @@
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/{owner}/{repo}/badge)](https://scorecard.dev/viewer/?uri=github.com/{owner}/{repo})
 
+<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+
 [![Best Practices](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2F%7Bowner%7D%2F%7Brepo%7D%2Fmain%2Fchecklist-status.json&logo=openssf)](./BestPracticesChecklist.md)
 </p>
 
