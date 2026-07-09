@@ -5,12 +5,12 @@
 
 version: 2
 
-project_name: <REPLACE_ME>   # e.g. my-tool, my-project
+project_name: template-repo   # replace with project name e.g. my-tool, my-project
 
-before:
-  hooks:
+# before:
+#   hooks:
     # Clean up build artifacts before release
-    - go mod tidy            # [GO] Remove if not a Go project
+    # - go mod tidy            # [GO] uncomment if  Go project
     # - npm ci               # [NODE] Uncomment for Node.js projects
     # - bun install --frozen # [NODE/BUN] Uncomment for Bun projects
 
@@ -19,27 +19,27 @@ env:
   # - NPM_TOKEN={{ .Env.NPM_TOKEN }}        # [NODE] Uncomment if publishing to npm
   # - DOCKER_USERNAME={{ .Env.DOCKER_USERNAME }}  # [DOCKER] Uncomment if pushing to Docker Hub
 
-builds:
-  # [GO] — Go binary build (most common for CLI tools, GitHub Actions runners)
-  - id: go-build
-    builder: go
-    main: ./main.go          # Entry point — change to ./cmd/<name>/main.go if needed
-    binary: <REPLACE_ME>     # Output binary name e.g. my-project
-    env:
-      - CGO_ENABLED=0        # Disable CGO for static binaries (recommended for Actions)
-    goos:
-      - linux
-      - darwin
-      - windows
-    goarch:
-      - amd64
-      - arm64
-    ldflags:
-      # Embed version info at build time
-      - -s -w
-      - -X main.version={{ .Version }}
-      - -X main.commit={{ .Commit }}
-      - -X main.date={{ .Date }}
+# builds:
+#   # [GO] — Go binary build (most common for CLI tools, GitHub Actions runners)
+#   - id: go-build
+#     builder: go
+#     main: ./main.go          # Entry point — change to ./cmd/<name>/main.go if needed
+#     binary: template-repo     # Output binary name e.g. my-project
+#     env:
+#       - CGO_ENABLED=0        # Disable CGO for static binaries (recommended for Actions)
+#     goos:
+#       - linux
+#       - darwin
+#       - windows
+#     goarch:
+#       - amd64
+#       - arm64
+#     ldflags:
+#       # Embed version info at build time
+#       - -s -w
+#       - -X main.version={{ .Version }}
+#       - -X main.commit={{ .Commit }}
+#       - -X main.date={{ .Date }}
     # [GO] Uncomment if building multiple binaries from the same repo
     # targets:
     #   - linux_amd64
@@ -172,9 +172,9 @@ sboms:
 release:                      # Release metadata and GitHub release configuration
   github:
     owner: AOSSIE-Org  
-    name: <REPLACE_ME>       # Repo name e.g. pr-feedback-action
+    name: template-repo       # Repo name e.g. pr-feedback-action
   # Make release a draft first so maintainer can review before publishing
-  draft: true
+  draft: false
   # Set to true to mark as a pre-release if version has a pre-release tag (e.g. v1.0.0-beta.1)
   prerelease: auto
   # Override release name
